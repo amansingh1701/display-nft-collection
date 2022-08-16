@@ -17,6 +17,7 @@ body {
   margin: 0;
   min-height: 100%;
   display: block;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 ::placeholder {
   color: white;
@@ -518,4 +519,23 @@ a:hover {
   --tw-border-opacity: 1;
   border-color: white;
   line-height: 1.5rem;
+}
+
+.grid-nft-wrapper {
+    padding: 0.1rem;
+    border-radius: 1.5rem;
+    background-image: linear-gradient(27deg, #725689, #725689, rgba(176, 91, 245, 0) 84%);
+}
+
+.card-primary {
+    display: -ms-grid;
+    display: grid;
+    padding: 2.5rem 3.75rem;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 1rem;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border-radius: 1.5rem;
+    background-color: #0b0c2b;
 }
